@@ -14,4 +14,7 @@
 2020-08-03 13:44:59,110 - logs - 请求方式: get，请求URL: http://127.0.0.1:8000/api/get_event_list/
 2020-08-03 13:44:59,110 - logs - 请求参数: {"eid":18}
 2020-08-03 13:44:59,110 - logs - post请求body类型为： ,body内容为：
-2020-08-03 13:45:01,169 - logs - 步骤：正在执行用例->event_query_001
+2020-08-03 13:45:01,169 - logs - 步骤：正在执行用例->event_query_0012020-08-03 22:01:19,258 - logs - 执行测试用例：正在执行用例->event_query_001
+2020-08-03 22:01:19,260 - logs - 请求方式: post，请求URL: http://127.0.0.1:3002/login
+2020-08-03 22:01:19,260 - logs - 请求参数: 
+2020-08-03 22:01:19,260 - logs - post请求body类型为：json ,body内容为：{"username":"18758198021","password":"TTFGUVIMxcEFjMmxvWVdsNWFXTjFia0I1ZURKSGFtTTRNME5RTTA0NFUyWTRPSEF5V0dadVRYSlJOMWhvUzBGNVJnPT0=","platform":"OPERATION"}
