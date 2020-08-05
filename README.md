@@ -13,10 +13,11 @@ Modify "APITestCase.xlsx","config.ini" in the "data" folder according to your ne
 
 ## todo:
 
-- [ ] 测试脚本excel中host使用配置文件配置，读取
+- [x] 测试脚本excel中host使用配置文件配置，读取
 - [ ] 预期结果简化，测试脚本excel测试结果3合1.
 - [ ] 优化log功能
 - [ ] 提供测试前初始化数据功能
+- [ ] 修复执行测试后测试结果文件写入错误的问题
 
 
 
