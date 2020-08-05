@@ -1,5 +1,4 @@
 import xlrd as xr
-from config import setting
 
 class ReadExcel():
     """读取excel文件数据"""

@@ -1,7 +1,7 @@
 import os,sys
 import shutil
-from openpyxl.styles import Font,Alignment
-from openpyxl.styles.colors import RED,GREEN,DARKYELLOW
+from openpyxl.styles import Font
+from openpyxl.styles import colors
 import configparser as cparser
 from openpyxl import load_workbook
 
@@ -31,8 +31,8 @@ class writeExcel():
         @return: 空
         """
         #设置格式
-        font_green = Font(color=GREEN,bold=True)
-        font_red = Font(color=RED,bold=True)
+        font_green = Font(color=colors.COLOR_INDEX[3],bold=True)
+        font_red = Font(color=colors.COLOR_INDEX[2],bold=True)
         # 获取所在行数
         L_n = "L"+ str(row_n)
         if value == "PASS":

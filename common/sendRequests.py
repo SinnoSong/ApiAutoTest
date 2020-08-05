@@ -1,14 +1,21 @@
 import os,sys,json
+import configparser
+from config import setting
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 class SendRequests():
     """发送请求数据"""
     def sendRequests(self,session,apiData):
+            # 读取config中的测试host，port
+            con = configparser.ConfigParser()
+            con.read(setting.TEST_CONFIG, encoding="utf-8")
+            test_host = con.get("test_host","host")
+            test_port = con.get("test_host","port")
             # 读取表格内容获取响应参数
             try:
                 method = apiData["method"]
-                url = apiData["url"]
+                url = "http://" + test_host +":"+ test_port + apiData["url"]
                 if  apiData["params"] == "":
                     par = None
                 else:
