@@ -6,7 +6,6 @@ __pycache__/
 \# C extensions
 *.so
 
-\data
 config.ini
 
 \# Distribution / packaging
