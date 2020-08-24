@@ -1,5 +1,5 @@
 import os,sys
-import shutil
+import shutil,time
 from openpyxl.styles import Font
 from openpyxl.styles import colors
 import configparser as cparser
@@ -15,7 +15,12 @@ cf.read(setting.TEST_CONFIG,encoding="utf-8")
 class writeExcel():
     """写入excel"""
     def __init__(self,fileName):
-        self.filename=fileName
+        #需要把文件后缀上测试结果时间
+        #获取当前时间
+        now = time.strftime("%Y-%m-%d-%H-%M")
+        splitFilename = fileName.split(".")
+        self.filename =splitFilename[0]+"_"+now+"."+splitFilename[1]
+        print(self.filename)
         if not os.path.exists(self.filename):
             shutil.copyfile(setting.SOURCE_FILE,setting.TARGET_FILE)
         #加载文件
